@@ -130,7 +130,7 @@
                         <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
                         <div class="dropdown-menu dropdown-menu-right animated zoomIn">
                             <ul class="dropdown-user">
-                                <li><i class="ti-user"></i>{{Auth::user()->name}}</li>
+                                <li><i class="ti-user"></i>{{auth()->user()->name}}</li>
                                 
                                 <li><a href="{{ route('logout') }}" 
                                     onclick="event.preventDefault();

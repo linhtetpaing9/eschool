@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'SearchController@main');
+Route::get('/', 'SearchController@main')->middleware('auth');
 
 
 Route::resource('/admin/student', 'StudentController')->except(['jsonData', 'getSection']);
